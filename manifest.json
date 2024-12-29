@@ -4,6 +4,7 @@
     "description": "A heartfelt birthday surprise app with beautiful animations, photos, and messages.",
     "start_url": "/index.html",
     "display": "standalone",
+    "display_override": ["window-controls-overlay"],
     "background_color": "#d2001a",
     "theme_color": "#d2001a",
     "icons": [
@@ -31,6 +32,24 @@
         "type": "image/png",
         "form_factor": "narrow"
       }
+    ],
+    "edge_side_panel": {
+        "preferred_width": 400
+    },
+    "file_handlers": [
+        {
+            "action": "/",
+            "accept": {
+                "application/json": [".json"]
+            }
+        }
+    ],
+    "handle_links": "auto",
+    "protocol_handlers": [
+        {
+            "protocol": "birthdayapp",
+            "url": "/"
+        }
     ],
     "orientation": "portrait"
   }
