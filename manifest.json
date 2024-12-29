@@ -1,0 +1,37 @@
+{
+    "name": "Happy Birthday Love ❤️",
+    "short_name": "BirthdayApp",
+    "description": "A heartfelt birthday surprise app with beautiful animations, photos, and messages.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#d2001a",
+    "theme_color": "#d2001a",
+    "icons": [
+      {
+        "src": "Assets-photos/icon 192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "Assets-photos/icon 512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "screenshot-desktop.png",
+        "sizes": "1920x1080",
+        "type": "image/png",
+        "form_factor": "wide"
+      },
+      {
+        "src": "screenshot-mobile.png",
+        "sizes": "1080x1920",
+        "type": "image/png",
+        "form_factor": "narrow"
+      }
+    ],
+    "orientation": "portrait"
+  }
+  
