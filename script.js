@@ -6,13 +6,23 @@ function revealApp() {
     }, 1000);
 }
 
-// Start the App Automatically After 5 Seconds
+// Automatically move from opening screen to video screen
 setTimeout(() => {
+    // Hide the opening screen and show the video screen
     document.getElementById('opening-screen').style.display = 'none';
-    document.getElementById('main-screen').style.display = 'flex';
-    document.getElementById('bg-music').play();
-    startTypingEffect();
-}, 5000);
+    document.getElementById('video-screen').style.display = 'flex';
+
+    const video = document.getElementById('birthday-video');
+    video.play(); // Play the video
+
+    // When the video ends, transition to the main screen and start typing effect
+    video.onended = () => {
+        document.getElementById('video-screen').style.display = 'none';
+        document.getElementById('main-screen').style.display = 'flex';
+        startTypingEffect();
+    };
+}, 5000); // Adjust timing if needed
+
 
 // Typing Effect with Photo Change
 const messages = [
