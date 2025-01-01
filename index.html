@@ -20,14 +20,6 @@
             <img src="Assets-photos/photo1.png" alt="Her Photo">
             <div class="pickup-line">Are you made of copper and tellurium? Because you're Cu-Te. ❤️</div>
         </div>
-<!-- Video Screen -->
-<div class="video-screen" id="video-screen">
-    <video autoplay muted playsinline id="birthday-video">
-        <source src="Assets-videos/video-mobile.mp4" type="video/mp4" media="(max-width: 768px)">
-        <source src="Assets-videos/video-desktop.mp4" type="video/mp4" media="(min-width: 769px)">
-        Your browser does not support the video tag.
-    </video>
-</div>
 
         <!-- Main Screen -->
         <div class="main-screen" id="main-screen">
@@ -38,16 +30,11 @@
                 <source src="Assets-audio/tw.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
+            <!-- New Button after the slideshow -->
+    <button id="action-button" class="hidden" onclick="actionButtonClicked()">Click Me!</button>
         </div>
     </div>
 
     <script src="script.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js')
-            .then((reg) => console.log('Service Worker registered:', reg))
-            .catch((err) => console.error('Service Worker error:', err));
-    }
-    </script>
 </body>
-</html>
+</html> 

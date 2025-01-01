@@ -4,7 +4,6 @@
     "description": "A heartfelt birthday surprise app with beautiful animations, photos, and messages.",
     "start_url": "/index.html",
     "display": "standalone",
-    "display_override": ["window-controls-overlay"],
     "background_color": "#d2001a",
     "theme_color": "#d2001a",
     "icons": [
@@ -33,67 +32,6 @@
         "form_factor": "narrow"
       }
     ],
-    "edge_side_panel": {
-        "preferred_width": 400
-    },
-    "file_handlers": [
-        {
-            "action": "/",
-            "accept": {
-                "application/json": [".json"]
-            }
-        }
-    ],
-    "handle_links": "auto",
-    "protocol_handlers": [
-        {
-            "protocol": "birthdayapp",
-            "url": "/"
-        }
-    ],
-    "orientation": "portrait",
-    "share_target": {
-        "action": "/share",
-        "method": "POST",
-        "enctype": "multipart/form-data",
-        "params": {
-            "title": "name",
-            "text": "message",
-            "url": "link"
-        }
-    },
-    "shortcuts": [
-        {
-            "name": "Open Birthday Message",
-            "short_name": "Message",
-            "description": "Quick access to birthday message",
-            "url": "/index.html#message",
-            "icons": [{
-                "src": "Assets-photos/icon 192.png",
-                "sizes": "192x192"
-            }]
-        },
-        {
-            "name": "View Photos",
-            "short_name": "Photos",
-            "description": "Browse all photos",
-            "url": "/index.html#photos",
-            "icons": [{
-                "src": "Assets-photos/icon 192.png",
-                "sizes": "192x192"
-            }]
-        }
-    ],
-    "widgets": [
-        {
-            "name": "Birthday Countdown",
-            "short_name": "Countdown",
-            "description": "Countdown to the special day",
-            "url": "/index.html#countdown",
-            "icons": [{
-                "src": "Assets-photos/icon 192.png",
-                "sizes": "192x192"
-            }]
-        }
-    ]
-}
+    "orientation": "portrait"
+  }
+  

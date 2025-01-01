@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Aradhana 💟</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Heart Animation Screen -->
+        <div class="heart-screen" id="heart-screen">
+            <div class="heart" onclick="revealApp()">❤️</div>
+        </div>
+    <div class="container">
+        <!-- Opening Screen -->
+        <div class="opening-screen" id="opening-screen">
+            <img src="Assets-photos/photo1.png" alt="Her Photo">
+            <div class="pickup-line">Are you made of copper and tellurium? Because you're Cu-Te. ❤️</div>
+        </div>
+<!-- Video Screen -->
+<div class="video-screen" id="video-screen">
+    <video autoplay muted playsinline id="birthday-video">
+        <source src="Assets-videos/video-mobile.mp4" type="video/mp4" media="(max-width: 768px)">
+        <source src="Assets-videos/video-desktop.mp4" type="video/mp4" media="(min-width: 769px)">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+        <!-- Main Screen -->
+        <div class="main-screen" id="main-screen">
+            <h1>🎂 Happy Birthday, My Love ❤️</h1>
+            <img id="slideshow" src="Assets-photos/photo1.png" alt="Her Photo">
+            <div class="typewriter" id="message">Dear [Her Name], Happy Birthday! You are the light of my life, and every moment with you feels magical. I am so lucky to have you. ❤️🎈</div>
+            <audio id="bg-music" loop>
+                <source src="Assets-audio/tw.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then((reg) => console.log('Service Worker registered:', reg))
+            .catch((err) => console.error('Service Worker error:', err));
+    }
+    </script>
+</body>
+</html>
